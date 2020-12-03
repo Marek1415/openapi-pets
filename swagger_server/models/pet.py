@@ -121,6 +121,6 @@ class Pet(Model):
             raise ValueError(
                 "Invalid value for `status` ({0}), must be one of {1}"
                 .format(status, allowed_values)
-        ***REMOVED***
+            )
 
         self._status = status

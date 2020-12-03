@@ -2,7 +2,7 @@
 
 from __future__ import absolute_import
 
-from flask ***REMOVED***
+from flask import json
 from six import BytesIO
 
 from swagger_server.models.pet import Pet  # noqa: E501

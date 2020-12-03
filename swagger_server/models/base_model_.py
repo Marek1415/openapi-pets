@@ -35,7 +35,7 @@ class Model(object):
                 result[attr] = list(map(
                     lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
                     value
-            ***REMOVED***)
+                ))
             elif hasattr(value, "to_dict"):
                 result[attr] = value.to_dict()
             elif isinstance(value, dict):
@@ -43,7 +43,7 @@ class Model(object):
                     lambda item: (item[0], item[1].to_dict())
                     if hasattr(item[1], "to_dict") else item,
                     value.items()
-            ***REMOVED***)
+                ))
             else:
                 result[attr] = value
 
